@@ -1,20 +1,27 @@
 {
     "name": "api_test",
     "version": "1.0.0",
-    "description": "Simple Express.js API that responds with Hello, World!",
+    "description": "Simple API POC - Express.js converted to Netlify Functions",
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
-        "dev": "node server.js"
+        "dev": "netlify dev",
+        "build": "netlify build",
+        "deploy": "netlify deploy --prod"
     },
     "keywords": [
-        "express",
+        "netlify-functions",
+        "serverless",
         "api",
-        "hello-world"
+        "hello-world",
+        "poc"
     ],
     "author": "",
     "license": "ISC",
     "dependencies": {
         "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "netlify-cli": "^17.0.0"
     }
 }
